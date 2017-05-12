@@ -13,6 +13,7 @@ class Heading extends React.Component {
 					<div className="text-vertical-center cover-photo">
 							<h1>Mark Aves</h1>
 							<h3>DevOps</h3>
+							<Avatar size="200" src={photo} round="true" />
 					</div>
 				</header>
 			</div>
