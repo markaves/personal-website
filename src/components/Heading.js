@@ -1,8 +1,7 @@
 import React from 'react';
 import '../css/Style.css';
 import photo from '../img/PersonalPicture.jpg'
-import Avatar from 'react-avatar';
-
+import {Image} from 'react-bootstrap';
 
 
 class Heading extends React.Component {
@@ -13,7 +12,8 @@ class Heading extends React.Component {
 					<div className="text-vertical-center cover-photo">
 							<h1>Mark Aves</h1>
 							<h3>DevOps</h3>
-							<Avatar size="200" src={photo} round="true" />
+						
+							<Image src={photo} height="200" circle />
 					</div>
 				</header>
 			</div>

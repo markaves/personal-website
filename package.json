@@ -8,6 +8,7 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.0.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {

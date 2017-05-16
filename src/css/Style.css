@@ -3,8 +3,9 @@
     display: table;
     position: relative;
     width: 100%;
-    height: 100%;
-    background: url(../img/BacolodMountain.jpg) no-repeat center center scroll;
+    height: 50%;
+    background: url(../img/Lake.jpg) no-repeat center center scroll;
+    background-size: 200px 200px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -33,4 +34,14 @@
     padding: 0;
     font-size: 3.5em;
     font-weight: 600;
+}
+
+.skills {
+    padding: 30px 0;
+    background-color: white;
+}
+
+.icon-div {
+	margin-top: 10px;
+	text-align: center;
 }

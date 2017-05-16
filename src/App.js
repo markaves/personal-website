@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import Heading from './components/Heading';
+import Skills from './components/Skills';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        Hello React...
+        <Heading />
+        <Skills />
       </div>
     );
   }
