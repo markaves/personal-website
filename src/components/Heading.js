@@ -25,7 +25,7 @@ class Heading extends React.Component {
       .then(data => 
     		
     		this.setState({
-      		spaceX: data[0].rocket.rocket_name + " launches at "  ,
+      		spaceX: data[0].rocket.rocket_name + " launches in  ,
       		spacexTime: data[0].launch_date_unix
       		
       	}))
