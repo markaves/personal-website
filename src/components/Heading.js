@@ -10,13 +10,18 @@ class Heading extends React.Component {
     	this.state = {
     		spaceX: null,
     		spacexTime: null,
-    		timeLeft: null
+    		timeLeft: null,
+    		spacexLocalTime: null,
+    		timeNow: null
     	};
 	}
 	
 	componentDidMount() {
 		this.fetchData()
-		setInterval(() => this.convertTime(), 1000)
+		setInterval(() => {
+			var timeNow = Math.round(new Date().getTime()/1000);
+			this.setState({timeNow})
+		}, 1000)
 	}	 
 	
 	fetchData() {
@@ -26,7 +31,8 @@ class Heading extends React.Component {
     		
     		this.setState({
       		spaceX: data[0].rocket.rocket_name + " launches in ",
-      		spacexTime: data[0].launch_date_unix
+      		spacexTime: data[0].launch_date_unix,
+      		spacexLocalTime: data[0].launch_date_local
       		
       	}))
       	
@@ -34,16 +40,25 @@ class Heading extends React.Component {
       .catch(error => console.log('parsing failed', error))
 	}
 	
-	convertTime() {
-		var ts = Math.round(new Date().getTime()/1000);
-		var rem = Number(this.state.spacexTime) - ts
-		var date = new Date(rem*1000);
-		var hours = date.getHours();
-		var minutes = "0" + date.getMinutes();
-		var seconds = "0" + date.getSeconds();
-		var timeLeft = hours + ' hours ' + minutes.substr(-2) + ' min ' + seconds.substr(-2) + " sec";
+	convertTime(timeNow) {
+		var diff = Number(this.state.spacexTime) - timeNow
+
+		var d, h, hh, m, mm, s;
+
+	 	m = Math.floor(diff / 60);
+	    s = diff % 60;
+        h = Math.floor(m / 60);
+        mm = m % 60;
+        d = Math.floor(h / 24);
+		hh = h % 24;
+		var timeLeft = 0
+		
+		if (hh)
+			timeLeft =d + " days " + hh + ' hours ' + mm + ' min ' + s + " sec";
+		else
+			timeLeft =d + " days " + hh + ' hour ' + mm + ' min ' + s + " sec";
 		if (this.state.spacexTime !== null) {
-			this.setState({timeLeft})
+			return timeLeft
 		}
 		}
 	
@@ -60,7 +75,8 @@ class Heading extends React.Component {
 							<h3>DevOps</h3>
 							<Image src={photo} height="200" circle />
 							<h4>{this.state.spaceX}</h4>
-							<h4>{this.state.timeLeft}</h4>
+							<h4>{this.convertTime(this.state.timeNow)}</h4>
+						
 							
 		
 						
