@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Style.css';
-import photo from '../img/PersonalPicture.jpg'
+import photo from '../img/MarkAves.jpg'
 import {
     Image
 } from 'react-bootstrap';
