@@ -1,4 +1,8 @@
+<div align="center">
 # Mark Aves Personal Website
+<br></br>
+
+</div>
 
 ## Technical Details
 
