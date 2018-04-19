@@ -70,3 +70,18 @@
     background: none;
 }
 
+.center{
+    text-align:center;
+    color:#fff
+}
+
+.icon-size{
+    font-size:3rem;
+    color:#fff;
+    padding:2px 5px 5px
+}
+
+a[href^="mailto:"]{
+    color:#fff
+}
+
