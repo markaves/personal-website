@@ -2,8 +2,8 @@ import React from 'react';
 import '../css/Style.css';
 import '../bootstrap/css/bootstrap.css'
 import '../bootstrap/css/bootstrap-theme.css'
-import '../../node_modules/devicon/devicon.css'
-import '../../node_modules/devicon/devicon-colors.css'
+import '../../node_modules/devicon-2.2/devicon.css'
+import '../../node_modules/devicon-2.2/devicon-colors.css'
 
 
 

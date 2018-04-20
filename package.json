@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "devicon": "^2.0.0",
+    "devicon-2.2": "^2.2.0",
     "react": "^15.5.4",
     "react-avatar": "^2.3.0",
     "react-bootstrap": "^0.32.1",
