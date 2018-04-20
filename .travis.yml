@@ -10,3 +10,5 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: "markcaves.com"
   skip_cleanup: true
+  local_dir: build/
+  acl: public_read
