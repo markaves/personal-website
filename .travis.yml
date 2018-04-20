@@ -14,4 +14,4 @@ deploy:
   acl: public_read
   region: ap-southeast-2
   on:
-    branch: develop
+    branch: master
