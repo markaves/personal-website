@@ -5,16 +5,27 @@ script:
   - npm run build 
   - npm test
 deploy:
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: "www.markaves.info"
-  skip_cleanup: true
-  local_dir: build/
-  acl: public_read
-  region: ap-southeast-2
-  on:
-    branch: master
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: "www.markaves.info"
+    skip_cleanup: true
+    local_dir: build/
+    acl: public_read
+    region: ap-southeast-2
+    on:
+      branch: master
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: "stage.markaves.info"
+    skip_cleanup: true
+    local_dir: build/
+    acl: public_read
+    region: ap-southeast-2
+    on:
+      branch: stage
 branches:
   only:
   - master
+  - stage
