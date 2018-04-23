@@ -4,7 +4,7 @@ import Heading from './components/Heading';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
-import Carousel from './components/Carousel';
+/*import Carousel from './components/Carousel';*/
 
 class App extends Component {
   render() {
