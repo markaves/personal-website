@@ -13,7 +13,6 @@ class App extends Component {
         <SMenu />
         <Heading />
         <AboutMe />
-        <Carousel />
         <Skills />
         <Footer />
       </div>
