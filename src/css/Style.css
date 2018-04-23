@@ -92,13 +92,13 @@ a[href^="mailto:"]{
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 15px;
+  top: 15px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #e5e6e8;
+  background: #bec3c4;
 }
 
 /* Position and sizing of clickable cross button */
