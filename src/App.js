@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SMenu from './components/Menu';
 import Heading from './components/Heading';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
@@ -9,6 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <SMenu />
         <Heading />
         <AboutMe />
         <Carousel />
