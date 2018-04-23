@@ -1,4 +1,4 @@
-import { slide as Menu } from 'react-burger-menu'
+import { bubble as Menu } from 'react-burger-menu'
 import { Image } from 'react-bootstrap';
 import React, { Component } from 'react';
 import react from '../img/react.jpg'
