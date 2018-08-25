@@ -78,7 +78,7 @@ class Heading extends React.Component {
 				<header className="header">
 					<div className="text-vertical-center cover-photo">
 							<h1>Mark Aves</h1>
-							<h3>DevOps</h3>
+							<h3>Developer/DevOps</h3>
 							<Image src={photo} height="200" circle />
 							<h4>{this.state.lineOne}</h4>
 							<h4>{this.state.lineTwo}</h4>
