@@ -5,8 +5,8 @@ import '../bootstrap/css/bootstrap.css'
 import '../bootstrap/css/bootstrap-theme.css'
 import aws from '../img/aws.jpg'
 import bamboo from '../img/bamboo.jpg'
-import jboss from '../img/jboss.jpg'
-import jenkins from '../img/jenkins.jpg'
+import spring from '../img/spring.png'
+import java from '../img/java.png'
 import react from '../img/react.jpg'
 import udeploy from '../img/udeploy.jpg'
 
@@ -21,13 +21,13 @@ class Skills extends React.Component {
                             <Image src={aws} height="60" />
                         </Col>
                         <Col xs={6} sm={4} md={2} className="icon-div">
+                            <Image src={java} height="70" />
+                        </Col>
+                        <Col xs={6} sm={4} md={2} className="icon-div">
+                            <Image src={spring} height="40" />
+                        </Col>
+                        <Col xs={6} sm={4} md={2} className="icon-div">
                             <Image src={bamboo} height="60" />
-                        </Col>
-                        <Col xs={6} sm={4} md={2} className="icon-div">
-                            <Image src={jboss} height="60" />
-                        </Col>
-                        <Col xs={6} sm={4} md={2} className="icon-div">
-                            <Image src={jenkins} height="60" />
                         </Col>
                         <Col xs={6} sm={4} md={2} className="icon-div">
                             <Image src={react} height="60" />
